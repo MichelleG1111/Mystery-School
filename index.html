@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,20 +80,138 @@
   </div>
 
   <script>
-    const quizData = [{
-      question: "Which landscape restores you most?",
-      options: [
-        { text: "An ancient forest or garden", value: "A" },
-        { text: "A ceremonial temple or sacred circle", value: "B" },
-        { text: "A clear night under stars", value: "C" },
-        { text: "A cozy corner filled with crystals and journals", value: "D" },
-        { text: "A modern minimalist space with glowing screens", value: "E" },
-        { text: "A kitchen lit by candlelight and intention", value: "F" },
-        { text: "A cave, graveyard, or symbolic underworld", value: "G" },
-        { text: "A sunlit hilltop sanctuary", value: "H" }
-      ]
-    }];
-
+    const quizData = [
+      {
+        question: "Which landscape restores you most?",
+        options: [
+          { text: "An ancient forest or garden", value: "A" },
+          { text: "A ceremonial temple or sacred circle", value: "B" },
+          { text: "A clear night under stars", value: "C" },
+          { text: "A cozy corner filled with crystals and journals", value: "D" },
+          { text: "A modern minimalist space with glowing screens", value: "E" },
+          { text: "A kitchen lit by candlelight and intention", value: "F" },
+          { text: "A cave, graveyard, or symbolic underworld", value: "G" },
+          { text: "A sunlit hilltop sanctuary", value: "H" }
+        ]
+      },
+      {
+        question: "What magical object are you drawn to?",
+        options: [
+          { text: "A bundle of fresh herbs", value: "A" },
+          { text: "A beeswax candle on a clean altar", value: "B" },
+          { text: "An indigo star map", value: "C" },
+          { text: "A pendulum or tarot deck", value: "D" },
+          { text: "Your crystal-charged phone", value: "E" },
+          { text: "A wooden spoon and seasoned cast iron", value: "F" },
+          { text: "A black mirror and snake-shaped candle", value: "G" },
+          { text: "A prism reflecting rainbow light", value: "H" }
+        ]
+      },
+      {
+        question: "How do you receive your spiritual downloads?",
+        options: [
+          { text: "By grounding in nature", value: "A" },
+          { text: "Through rhythm and ritual", value: "B" },
+          { text: "By tracking planetary cycles", value: "C" },
+          { text: "In dreams and flashes of insight", value: "D" },
+          { text: "Via digital synchronicities", value: "E" },
+          { text: "Cooking with inherited family recipes", value: "F" },
+          { text: "Sitting with grief or shadow work", value: "G" },
+          { text: "Sending light and healing in silence", value: "H" }
+        ]
+      },
+      {
+        question: "Choose a mantra that aligns with your truth.",
+        options: [
+          { text: "I grow wild and rooted", value: "A" },
+          { text: "I hold space for the sacred", value: "B" },
+          { text: "I dream with the stars", value: "C" },
+          { text: "I trust the whisper within", value: "D" },
+          { text: "I code with sacred intent", value: "E" },
+          { text: "I stir intention into all I nourish", value: "F" },
+          { text: "I reclaim the light from shadow", value: "G" },
+          { text: "I carry light without bypass", value: "H" }
+        ]
+      },
+      {
+        question: "Where do you feel most at home?",
+        options: [
+          { text: "Tending to plants or walking barefoot on the earth", value: "A" },
+          { text: "In sacred silence before ritual begins", value: "B" },
+          { text: "Under moonlight with the stars above", value: "C" },
+          { text: "Curled up with your journal or cards", value: "D" },
+          { text: "In front of a glowing screen or digital altar", value: "E" },
+          { text: "Preparing a meal with intention", value: "F" },
+          { text: "Doing deep personal work in solitude", value: "G" },
+          { text: "Offering light and holding space for others", value: "H" }
+        ]
+      },
+      {
+        question: "Which energy do you embody best?",
+        options: [
+          { text: "Grounded and nurturing", value: "A" },
+          { text: "Calm and ceremonial", value: "B" },
+          { text: "Dreamy and cosmic", value: "C" },
+          { text: "Intuitive and reflective", value: "D" },
+          { text: "Innovative and clear", value: "E" },
+          { text: "Warm and nourishing", value: "F" },
+          { text: "Deep and transformative", value: "G" },
+          { text: "Radiant and supportive", value: "H" }
+        ]
+      },
+      {
+        question: "What do others seek you out for?",
+        options: [
+          { text: "Herbal wisdom or grounding advice", value: "A" },
+          { text: "To lead rituals or ceremonies", value: "B" },
+          { text: "Astrology insights or cosmic timing", value: "C" },
+          { text: "Dream interpretations or emotional clarity", value: "D" },
+          { text: "Tech help with magical intention", value: "E" },
+          { text: "Comfort food or nurturing presence", value: "F" },
+          { text: "Help through shadow or grief", value: "G" },
+          { text: "Healing energy and light work", value: "H" }
+        ]
+      },
+      {
+        question: "What kind of magic feels most natural?",
+        options: [
+          { text: "Plant spells and ancestral remedies", value: "A" },
+          { text: "Circle casting and seasonal rituals", value: "B" },
+          { text: "Working with moon phases and stars", value: "C" },
+          { text: "Divination, pendulums, or dreamwork", value: "D" },
+          { text: "Sacred coding, apps, or virtual altars", value: "E" },
+          { text: "Blessing meals and sacred cleaning", value: "F" },
+          { text: "Alchemical healing and mirror work", value: "G" },
+          { text: "Light language, soul alignment work", value: "H" }
+        ]
+      },
+      {
+        question: "Which altar item feels most like you?",
+        options: [
+          { text: "Cauldron steaming with herbs", value: "A" },
+          { text: "Candle and seasonal symbols", value: "B" },
+          { text: "Moon-charged crystal or star map", value: "C" },
+          { text: "Mirror, pendulum, or dream journal", value: "D" },
+          { text: "Tablet, phone, or digital sigil", value: "E" },
+          { text: "Salt bowl and cooking tools", value: "F" },
+          { text: "Snake figurine or shadow key", value: "G" },
+          { text: "Crystal prism or sacred symbol", value: "H" }
+        ]
+      },
+      {
+        question: "What legacy do you want to leave behind?",
+        options: [
+          { text: "Healed land and herbal teachings", value: "A" },
+          { text: "Ceremonies passed to future generations", value: "B" },
+          { text: "Cosmic wisdom and aligned timelines", value: "C" },
+          { text: "Intuitive guidance and mystical insight", value: "D" },
+          { text: "Digital temples and tech infused with spirit", value: "E" },
+          { text: "Family recipes and sacred home rituals", value: "F" },
+          { text: "Shadow healing for generational wounds", value: "G" },
+          { text: "Soul truths and radiant remembrance", value: "H" }
+        ]
+      }
+    ];
     const resultMap = {
       A: { name: "Green Witch", link: "https://example.com/green.pdf" },
       B: { name: "Ritual Keeper", link: "https://example.com/ritual.pdf" },
@@ -119,13 +236,18 @@
       const questionTitle = document.createElement('h3');
       questionTitle.innerText = q.question;
       box.appendChild(questionTitle);
+
       q.options.forEach(opt => {
         const div = document.createElement('div');
         div.className = 'answer';
         div.innerText = opt.text;
-        div.onclick = () => { answers[currentQuestion] = opt.value; nextQuestion(); };
+        div.onclick = () => {
+          answers[currentQuestion] = opt.value;
+          nextQuestion();
+        };
         box.appendChild(div);
       });
+
       container.appendChild(box);
       updateProgressBar();
     }
@@ -153,11 +275,14 @@
 
     function showResults() {
       const count = {};
-      answers.forEach(letter => { count[letter] = (count[letter] || 0) + 1; });
+      answers.forEach(letter => {
+        count[letter] = (count[letter] || 0) + 1;
+      });
       const top = Object.entries(count).sort((a, b) => b[1] - a[1])[0][0];
       const res = resultMap[top];
       const resultDiv = document.getElementById('quiz-result');
-      resultDiv.innerHTML = `You answered mostly ${top}s. You are a <strong>${res.name}</strong>.<br><br>
+      resultDiv.innerHTML = `
+        You answered mostly ${top}s. You are a <strong>${res.name}</strong>.<br><br>
         <a href="${res.link}" target="_blank">
           <button>Download the ${res.name} Archetype PDF</button>
         </a>`;
